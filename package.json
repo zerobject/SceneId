@@ -1,0 +1,17 @@
+{
+    "name": "com.zerobject.sceneid",
+    "version": "0.1.0",
+    "displayName": "Scene ID",
+    "description": "The simple, powerful tool for simplified and efficient scene management.",
+    "unity": "6000.0",
+    "dependencies": {},
+    "keywords": [
+        "Util",
+        "Utility",
+        "Scene Management",
+        "Scene"
+    ],
+    "author": {
+        "name": "Zerobject"
+    }
+}
