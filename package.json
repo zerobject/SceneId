@@ -6,7 +6,7 @@
   "unity": "6000.0",
   "dependencies": {
     "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#v2.1.4",
-  }
+  },
   "keywords": [
     "Util",
     "Utility",
