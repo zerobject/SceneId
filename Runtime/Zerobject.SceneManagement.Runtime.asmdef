@@ -1,0 +1,14 @@
+{
+    "name": "Zerobject.SceneManagement.Runtime",
+    "rootNamespace": "Zerobject.SceneManagement.Runtime",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
