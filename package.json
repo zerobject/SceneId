@@ -4,9 +4,9 @@
 	"displayName": "Scene ID",
 	"description": "Powerful, lightweight tool for simplified scene management in Unity.",
 	"unity": "6000.0",
-	"dependencies": [
+	"dependencies": {
 		"com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#v2.1.4",
-	],
+	},
 	"keywords": [
 		"Util",
 		"Utility",
