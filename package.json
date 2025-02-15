@@ -1,19 +1,19 @@
 {
-  "name": "com.zerobject.sceneid",
-  "version": "0.1.0",
-  "displayName": "Scene ID",
-  "description": "Powerful, lightweight tool for simplified scene management in Unity.",
-  "unity": "6000.0",
-  "dependencies": {
+	"name": "com.zerobject.sceneid",
+	"version": "0.1.0",
+	"displayName": "Scene ID",
+	"description": "Powerful, lightweight tool for simplified scene management in Unity.",
+	"unity": "6000.0",
+	"dependencies": [
 		"com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#v2.1.4",
-	},
-  "keywords": [
-    "Util",
-    "Utility",
-    "Scene Management",
-    "Scene"
-  ],
-  "author": {
-    "name": "Zerobject"
-  }
+	],
+	"keywords": [
+		"Util",
+		"Utility",
+		"Scene Management",
+		"Scene"
+	],
+	"author": {
+		"name": "Zerobject"
+	}
 }
