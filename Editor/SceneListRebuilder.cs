@@ -13,7 +13,7 @@ namespace Zerobject.SceneManagement.Editor
     {
         private const string SceneIdClassTemplate = @"
 /*** AUTO-GENERATED CODE ***/
-/*** СГЕНЕРИРОВАННЫЙ КОД ***/
+/*** Г‘ГѓГ…ГЌГ…ГђГ€ГђГЋГ‚ГЂГЌГЌГ›Г‰ ГЉГЋГ„ ***/
 
 namespace Zerobject.SceneManagement.Runtime
 {
@@ -27,7 +27,7 @@ namespace Zerobject.SceneManagement.Runtime
 }";
         private const string IndexCollectionClassTemplate = @"
 /*** AUTO-GENERATED CODE ***/
-/*** СГЕНЕРИРОВАННЫЙ КОД ***/
+/*** Г‘ГѓГ…ГЌГ…ГђГ€ГђГЋГ‚ГЂГЌГЌГ›Г‰ ГЉГЋГ„ ***/
 
 using System.Collections.Generic;
 
@@ -63,8 +63,8 @@ namespace Zerobject.SceneManagement.Runtime
         private const string IndexDataClassName = nameof(SceneIndexData);
         private const string IndexDataClassPath = "Assets/Editor/Resources";
 
-        private const string SceneIdClassGuid = "8dfcc8e75d6af9b48ae0b10e8e18e03b";
-        private const string IndexCollectionClassGuid = "040a66fa6d0ccb4478ac1ac5b80f140c";
+        private const string SceneIdClassGuid = "d1d68175920019d45aea88dd475e433b";
+        private const string IndexCollectionClassGuid = "a3f1a1f7a8b474d4abccdc453725c85d";
 
         private static SceneIndexData LoadOrCreateIndexData()
         {
@@ -90,7 +90,7 @@ namespace Zerobject.SceneManagement.Runtime
         public static string ConvertToPascalCase(string name)
         {
             if (string.IsNullOrWhiteSpace(name))
-                throw new ArgumentException("Имя сцены не должно быть пустым.", nameof(name));
+                throw new ArgumentException("Г€Г¬Гї Г±Г¶ГҐГ­Г» Г­ГҐ Г¤Г®Г«Г¦Г­Г® ГЎГ»ГІГј ГЇГіГ±ГІГ»Г¬.", nameof(name));
 
             name = Regex.Replace(name, @"\s*\(.*?\)", "");
             name = Regex.Replace(name, @"[^a-zA-Z0-9 ]", "");
@@ -130,7 +130,7 @@ namespace Zerobject.SceneManagement.Runtime
                 }
                 if (sceneIdEnumValues.Contains(entry.Name))
                 {
-                    throw new Exception("Индекс используется несколькими сценами.");
+                    throw new Exception("Г€Г­Г¤ГҐГЄГ± ГЁГ±ГЇГ®Г«ГјГ§ГіГҐГІГ±Гї Г­ГҐГ±ГЄГ®Г«ГјГЄГЁГ¬ГЁ Г±Г¶ГҐГ­Г Г¬ГЁ.");
                 }
 
                 sceneIdEnumValues.Add(entry.Name);
@@ -158,7 +158,7 @@ namespace Zerobject.SceneManagement.Runtime
             indexData.Entries = sceneEntriesList;
             EditorUtility.SetDirty(indexData);
             AssetDatabase.SaveAssets();
-            Debug.Log("Индексы обновлены.");
+            Debug.Log("Г€Г­Г¤ГҐГЄГ±Г» Г®ГЎГ­Г®ГўГ«ГҐГ­Г».");
             return;
 
             string SelectSceneIdEntry(SceneEntry scene)
@@ -168,9 +168,9 @@ namespace Zerobject.SceneManagement.Runtime
                 if (!string.Equals(enumName, scene.Name))
                 {
                     if (EditorUtility.DisplayDialog(
-                        "Другое имя сцены",
-                        $"Имя сцены {sceneName} было изменено, выберите вариант для включения в список идентификаторов.",
-                        "Новое", "Старое")) scene.Name = enumName;
+                        "Г„Г°ГіГЈГ®ГҐ ГЁГ¬Гї Г±Г¶ГҐГ­Г»",
+                        $"Г€Г¬Гї Г±Г¶ГҐГ­Г» {sceneName} ГЎГ»Г«Г® ГЁГ§Г¬ГҐГ­ГҐГ­Г®, ГўГ»ГЎГҐГ°ГЁГІГҐ ГўГ Г°ГЁГ Г­ГІ Г¤Г«Гї ГўГЄГ«ГѕГ·ГҐГ­ГЁГї Гў Г±ГЇГЁГ±Г®ГЄ ГЁГ¤ГҐГ­ГІГЁГґГЁГЄГ ГІГ®Г°Г®Гў.",
+                        "ГЌГ®ГўГ®ГҐ", "Г‘ГІГ Г°Г®ГҐ")) scene.Name = enumName;
                 }
                 return $"{scene.Name} = {scene.Value},";
             }
