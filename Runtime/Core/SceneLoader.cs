@@ -22,9 +22,6 @@ namespace Zerobject.SceneManagement.Runtime
                 Debug.LogError($"Невозможно загрузить сцену с идентификатором {id}");
                 return;
             }
-
-            Debug.Log($"Загружается сцена {id}...");
-
             if (_taskHandler == null)
             {
                 _taskHandler = new();
@@ -40,9 +37,6 @@ namespace Zerobject.SceneManagement.Runtime
                 Debug.LogError($"Невозможно выгрузить сцену с идентификатором {id}.");
                 return;
             }
-
-            Debug.Log($"Выгружается сцена {id}...");
-
             if (_taskHandler == null)
             {
                 _taskHandler = new();
@@ -80,7 +74,7 @@ namespace Zerobject.SceneManagement.Runtime
             }
             if (string.IsNullOrEmpty(id.Name()))
             {
-                Debug.LogError($"Сцена с идентификатором {id} не найдена.");
+                Debug.LogError($"Сцена с идентификатором <b>{id}</b> не найдена.");
                 return;
             }
 

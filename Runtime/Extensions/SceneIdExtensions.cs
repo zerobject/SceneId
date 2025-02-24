@@ -79,6 +79,12 @@ namespace Zerobject.SceneManagement.Runtime
         public static void Unload(this SceneId id) 
             => SceneLoader.Unload(id);
 
+        public static void ReplaceActiveSceneWith(this SceneId id)
+        {
+            SceneLoader.Load(id, LoadSceneMode.Additive, true);
+            SceneLoader.Unload(SceneManager.GetActiveScene().buildIndex.ToId());
+        }
+
         public static bool EqualTo(this SceneId id1, SceneId id2) 
             => string.Equals(id1.Name(), id2.Name());
     }
