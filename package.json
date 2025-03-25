@@ -1,6 +1,6 @@
 {
 	"name": "com.zerobject.sceneid",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"displayName": "Scene ID",
 	"description": "Powerful, lightweight tool for simplified scene management in Unity.",
 	"unity": "6000.0",
